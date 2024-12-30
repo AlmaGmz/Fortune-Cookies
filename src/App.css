@@ -1,0 +1,106 @@
+
+.wrapped {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+  
+ }
+
+.container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.25em;
+  display:flex;
+  flex-direction: column;
+  gap: 1.5em;
+  
+  
+} 
+
+.name {
+  text-align: center;
+  color : #fff;
+  letter-spacing: .03cap;
+  text-shadow: 5px 10px 5px #350ca659;
+  font-size: 44px;  
+  margin: 0;
+  padding: 0 9px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  border: 1px dotted #350ca659;
+  
+  
+}
+.name:hover {
+  background-color: #6f5f9a78; 
+  transform: scale(1.05); 
+}
+
+
+@media (min-width: 768px){
+  .name{
+   font-size: 58px;
+ }
+}
+.card{
+  max-width: 700px;
+  height: 400px;
+  background-image: url('/public/rectangle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  
+  padding: 0 1.0em;
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+    
+}
+.card:hover {
+  transform: scale(1.05);
+   
+}
+
+@media (min-width: 768px){
+ .card{
+  background-size: contain;
+ }
+}
+
+.card__body{
+  padding: 0 .3em;
+}
+.card__text{
+  margin: 0;
+  color : #120923e6;
+  font-weight: bolder;
+  text-align: center;  
+  font-size: 25px;
+  
+ }
+
+.btn {
+  width: fit-content;
+  font-family: "Permanent Marker", serif;
+  color:#120923e6;
+  margin: 0 auto;
+  padding: .75em 4.5em;
+  background-color: #ffffff50;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 19px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  background-color: #563ba296; 
+  transform: scale(1.05); 
+}
